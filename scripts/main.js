@@ -1,5 +1,5 @@
 //code for Tabs - https://codepen.io/anon/pen/mJyQez 
-$(document).ready(function() {
+/*$(document).ready(function() {
 
     $('.main-wrapper .tabs li').on('mouseover', function() {
 
@@ -22,4 +22,29 @@ $(document).ready(function() {
                 $(this).addClass('active');
             });
         }
-    });
+    });*/
+
+function callModalRegister(){
+    var userName = document.getElementById("navUserNameID");
+    var password = document.getElementById("navPasswordID");
+
+    var output = {};
+    output.username = userName.value;
+    output.password = password.value;
+
+    console.log(output);
+    //backend function call (output)
+}
+
+
+/*php func login (js obj)
+
+obj.un
+obj.pw
+
+get sql find(un)
+if valid return 
+else return report incorrect details (turn on report div)
+
+
+*/
